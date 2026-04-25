@@ -1,0 +1,24 @@
+# Data science kutubxonalar
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+
+# Forecasting
+prophet>=1.1.5
+
+# Deep Learning (M3 Mac uchun MPS qo'llab-quvvatlanadi)
+torch>=2.2
+
+# API
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+# Notebook
+jupyter>=1.0
+ipykernel>=6.29
+
+# Utility
+python-dateutil>=2.9
