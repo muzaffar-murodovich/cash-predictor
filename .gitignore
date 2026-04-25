@@ -34,3 +34,8 @@ models/*.pth
 
 # Logs
 *.log
+
+dashboard/.env
+
+#node
+dashboard/node_modules

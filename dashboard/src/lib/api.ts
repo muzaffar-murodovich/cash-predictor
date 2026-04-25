@@ -87,9 +87,12 @@ export type HistoryResponse = {
   history: HistoryItem[];
 };
 
+type BranchesResponse = { branches: Branch[] };
+
 export const api = {
   getSummary: () => fetchJSON<DashboardSummary>("/api/dashboard/summary"),
-  getBranches: () => fetchJSON<Branch[]>("/api/branches"),
+  getBranches: () =>
+    fetchJSON<BranchesResponse>("/api/branches").then((r) => r.branches),
   getForecast: (id: number, days = 7) =>
     fetchJSON<ForecastResponse>(`/api/forecast/${id}?days=${days}`),
   getRecommendations: (id: number, days = 7) =>
